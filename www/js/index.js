@@ -12,10 +12,7 @@ var app = {
     },
 };
 
-function verRegistro() {
-    document.getElementById('registro').style.display = 'block';
-}
-
 function verAlertas() {
     document.getElementById('alertas').style.display = 'block';
+    document.getElementById('registro').style.display = 'none';
 }

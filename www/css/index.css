@@ -77,6 +77,6 @@ body {
 }
 
 /* hidden pages */
-#registro, #alertas {
+#alertas {
     display: none;
 }
