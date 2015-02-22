@@ -14,8 +14,16 @@
          <!-- REGISTRO -->
         <div id="registro">
             <div class="cabecera"> <div class="logo"> <img src="img/logo.jpg"> </div> <div class="texto"> ALERTA HUARAL </div>
-            <div id="mensaje"> </div>
-            <div id="contenido"> </div>
+            <div id="mensaje"> BIENVENIDO, POR FAVOR REGISTRESE PARA USAR LA APP. </div>
+            <div id="contenido"> 
+                <form> 
+                    DNI : <input type="text" id="dni" name="dni" maxlength="8"> <br>
+                    TEL&Eacute;FONO : <input type="text" id="telefono" name="telefono" maxlength="15"> <br>
+                    NOMBRE : <input type="text" id="nombre" name="nombre" maxlength="30"> <br>
+                    CORREO : <input type="email" id="email" name="email"> <br>
+                    <input type="submit" value="Enviar">
+                </form> 
+            </div>
         </div>
 
         <!-- MENU ALERTAS -->
@@ -38,6 +46,7 @@
               //Local storage is not set, hence first time launch. set the local storage item
               window.localStorage.setItem('launchCount',1);
               //Do the other stuff related to first time launch
+              verRegistro();
             }
         </script>
     </body>

@@ -11,3 +11,7 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
 };
+
+function verRegistro() {
+    document.getElementById('registro').style.display = 'block';
+}
