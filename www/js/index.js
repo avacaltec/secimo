@@ -12,7 +12,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         uuid = device.uuid;
-        var htuu = document.getElementById('uuid');
+        var htuu = document.getElementById('code');
         htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
     },
 };
