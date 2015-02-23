@@ -1,4 +1,4 @@
-var uuid;
+var uuid = "";
 
 var app = {
     // Application Constructor
