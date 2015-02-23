@@ -20,18 +20,21 @@ function verAlertas() {
 //alert("EXEC");
 function registroUsuario() {
     alert("SUBMIT");
-    var dataID = $(this).parent().attr('data-datos-id');
-    var postData = $(this).serialize();
-    $.ajax({
-        type: 'POST',
-        data: postData+'&lid='+dataID,
-        url: 'http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/rus230215v001jm.php',
-        success: function(data){
-            console.log(data);
-            alert("OK");
-        },
-        error: function(data){ alert(data); }
+    $("#registroForm").submit(function() {
+
+        var url = "http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/rus230215v001jm.php"; // the script where you handle the form input.
+
+        $.ajax({
+               type: "POST",
+               url: url,
+               data: $("#registroForm").serialize(), // serializes the form's elements.
+               success: function(data)
+               {
+                   alert(data); // show response from the php script.
+               }
+             });
+
+        return false; // avoid to execute the actual submit of the form.
     });
     alert("SUBMIT2");
-    return false;
 }
