@@ -19,35 +19,7 @@ function verAlertas() {
 
 function enviarForm() {
     $('form').submit(function(){
-                var dataID = $(this).parent().attr('data-datos-id');
-                var postData = $(this).serialize();
-                $.ajax({
-                    type: 'POST',
-                    data: postData+'&lid='+dataID,
-                    url: 'http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/rus230215v001jm.php',
-                    success: function(data){
-                        console.log(data);
-                        alert("correcto");
-                        /*$.ajax({
-                            url: 'http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/vrus230215v001jm.php',
-                            type: 'GET',
-                            dataType: 'jsonp',
-                            jsonp: 'callback',
-                            error: function(xhr, status, error) {
-                                alert("error");
-                            },
-                            success: function(jsonp) { 
-                              if (jsonp.mensaje<1) {
-                                    alert('INCORRECTO');
-                                }else{
-                                    alert('CORRECTO');
-                                }
-                            }
-                        });*/
-                    },
-                    error: function(data){ alert(data); }
-                });
-
+                alert("SUBMIT OK");
                 return false;
             });
 }
