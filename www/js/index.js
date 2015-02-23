@@ -1,3 +1,5 @@
+var uuid;
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -9,6 +11,9 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        uuid = device.uuid;
+        var htuu = document.getElementById('uuid');
+        htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
     },
 };
 
@@ -19,9 +24,8 @@ function verAlertas() {
     document.getElementById('registro').style.display = 'none';
 }
 
-
     $('#registroUsuario').submit(function(){
-                var uuid = device.uuid;
+                
                 alert(uuid);
                 var count = 0;
                 var dni = document.forms["registroUsuario"]["dni"].value;
