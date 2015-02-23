@@ -12,8 +12,7 @@ var app = {
     },
 };
 
-var uuid = device.uuid;
-alert("uuid");
+
 
 function verAlertas() {
     document.getElementById('alertas').style.display = 'inline-block';
@@ -22,7 +21,8 @@ function verAlertas() {
 
 
     $('#registroUsuario').submit(function(){
-                
+                var uuid = device.uuid;
+                alert(uuid);
                 var count = 0;
                 var dni = document.forms["registroUsuario"]["dni"].value;
                 var telefono = document.forms["registroUsuario"]["telefono"].value;
