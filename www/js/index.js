@@ -13,6 +13,6 @@ var app = {
 };
 
 function verAlertas() {
-    document.getElementById('alertas').style.display = 'block';
+    document.getElementById('alertas').style.display = 'inline-block';
     document.getElementById('registro').style.display = 'none';
 }

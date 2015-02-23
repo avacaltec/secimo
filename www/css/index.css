@@ -1,30 +1,21 @@
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    padding:0; 
+    margin:0;
 }
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
     text-transform:uppercase;
-    width:100%;
+    width:100%; 
+    height:100%;
+    padding:0; 
+    margin:0;
 }
 
 @keyframes fade {
@@ -44,39 +35,75 @@ body {
     -webkit-animation:fade 3000ms infinite;
 }
 
-/* pages */
-#registro {
+/* registro */
+#registro {  
+    background-color: #000;  
+    width: 100%;
+    height:100vh;
+}
+
+#registro .cabecera {
+    display: inline-block;
+    background-color: #FE642E;
+    width: 100%;
+}
+
+#registro .contenido { 
     width: 100%;
     height: 100%;
-    background-color: #00FF80;
+    background-color: #FE9A2E;
+    padding-top: 3%;
+    font-size: 15px;
+}
+
+#registro .mensaje { 
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0.5%;
 }
 
 #registro .cabecera .logo {
-    background-color: #D8F781;
     float: left;
-    width: 20%;
-    height: 100%;
+    width: 40%;
+    margin-top: 2%;
+    text-align: center;
 }
 
 #registro .cabecera .texto {
-    background-color: #2EFEC8;
     float: left;
-    width: 70%;
-    height: 100%;
+    width: 60%;
+    text-align: center;
 }
 
-#cabecera {
-    background-color: #F6D8CE;
-    width: 100%;
-    height: 30%;
+#registro .contenido table { 
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#registro .cabecera .logo img {
+    width: 60%;
+}
+
+#registro .cabecera .texto img {
+    width: 98%; 
+}
+
 
 #mensaje {
     width: 100%;
     background-color: #A9A9F5;
 }
 
+/* generic styles */
+.inputSubmit {
+    width: 20em;  
+    height: 2em;
+}
+
 /* hidden pages */
 #alertas {
     display: none;
 }
+

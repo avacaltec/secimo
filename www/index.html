@@ -13,18 +13,32 @@
 
          <!-- REGISTRO -->
         <div id="registro">
-            <div class="cabecera"> <div class="logo"> <img src="img/logo.jpg"> </div> <div class="texto"> ALERTA HUARAL </div>
-            <div id="mensaje"> BIENVENIDO, POR FAVOR REGISTRESE PARA USAR LA APP. </div>
-            <div id="contenido"> 
+            <div class="cabecera"> 
+                <div class="logo"> <img src="img/logo.jpg"> </div>
+                <div class="texto"> <img src="img/alerta_huaral.png"> </div>
+            </div>
+            <div class="mensaje"> BIENVENIDO, POR FAVOR REGISTRESE PARA USAR LA APP. </div>
+            <div class="contenido"> 
                 <form> 
-                    DNI : <input type="text" id="dni" name="dni" maxlength="8"> <br>
-                    TEL&Eacute;FONO : <input type="text" id="telefono" name="telefono" maxlength="15"> <br>
-                    NOMBRE : <input type="text" id="nombre" name="nombre" maxlength="30"> <br>
-                    CORREO : <input type="email" id="email" name="email"> <br>
-                    <input type="submit" value="Enviar">
+                    <table>
+                        <tr>
+                            <td> <b>DNI </td> <td>:</b> </td><td> <input type="text" id="dni" name="dni" maxlength="8"> </td>
+                        </tr>
+                        <tr>
+                            <td> <b>TEL&Eacute;FONO </td> <td>:</b> </td><td> <input type="text" id="telefono" name="telefono" maxlength="15"> </td>
+                        <tr>
+                            <td> <b>NOMBRE </td> <td>:</b> </td><td> <input type="text" id="nombre" name="nombre" maxlength="30"> </td>
+                        </tr>
+                        <tr>
+                            <td> <b>CORREO </td> <td>:</b> </td><td> <input type="email" id="email" name="email"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="submit" value="Enviar" class="inputSubmit"></td>
+                        </tr>
+                    </table>
                 </form> 
             </div>
-        </div>
+ 
 
         <!-- MENU ALERTAS -->
         <div id="alertas">
@@ -38,7 +52,7 @@
         <script type="text/javascript">
             app.initialize();
 
-            var applaunchCount = window.localStorage.getItem('launchCount');
+           /* var applaunchCount = window.localStorage.getItem('launchCount');
             //Check if it already exists or not
             if(applaunchCount){
                //This is a second time launch, and count = applaunchCount
@@ -48,7 +62,7 @@
               window.localStorage.setItem('launchCount',1);
               //Do the other stuff related to first time launch
               verAlertas();
-            }
+            } */
         </script>
     </body>
 </html>
