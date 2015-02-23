@@ -19,8 +19,11 @@ function verAlertas() {
 
 function enviarForm() {
     $('form').submit(function(){
+                var dataID = $(this).parent().attr('data-datos-id');
+                var postData = $(this).serialize();
                 $.ajax({
                     type: 'POST',
+                    data: postData+'&lid='+dataID,
                     url: 'http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/rus230215v001jm.php',
                     success: function(data){
                         console.log(data);
