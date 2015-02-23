@@ -17,7 +17,7 @@ function verAlertas() {
     document.getElementById('registro').style.display = 'none';
 }
 
-    $('formularioRegistro').submit((function(){
+    $('#formularioRegistro').submit((function(){
                 $.ajax({
                     type: 'POST',
                     url: 'http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/rus230215v001jm.php',
