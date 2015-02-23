@@ -17,9 +17,9 @@ function verAlertas() {
     document.getElementById('registro').style.display = 'none';
 }
 
-function enviarForm() {
-    $('form').submit(function(){
+alert("EXEC");
+
+$('form').submit(function(){
                 alert("SUBMIT OK");
                 return false;
-            });
-}
+});
