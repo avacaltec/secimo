@@ -13,8 +13,9 @@ var app = {
 };
 
 function obtenerId() {
-    var uuid = device.uuid;
-    alert(uuid);
+    alert("onload");
+    var string = device.uuid;
+    alert(string);
     var htuu = document.getElementById('code');
     htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
 }
