@@ -1,4 +1,4 @@
-var uuid = "";
+var uuid;
 
 var app = {
     // Application Constructor
@@ -11,13 +11,14 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        uuid = device.uuid;
-        var htuu = document.getElementById('code');
-        htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
     },
 };
 
-
+function obtenerId() {
+    uuid = device.uuid;
+    var htuu = document.getElementById('code');
+    htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
+}
 
 function verAlertas() {
     document.getElementById('alertas').style.display = 'inline-block';
@@ -25,7 +26,6 @@ function verAlertas() {
 }
 
     $('#registroUsuario').submit(function(){
-                
                 alert(uuid);
                 var count = 0;
                 var dni = document.forms["registroUsuario"]["dni"].value;
