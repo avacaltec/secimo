@@ -41,21 +41,17 @@ body {
 
 /* registro */
 #registro {  
-    /*background-color: #000;  */
-    background-color: #FE9A2E;
     width: 100%;
     height: 100%;
 }
 
 #registro .cabecera {
     display: inline-block;
-    background-color: #FE642E;
-    width: 100%;
+    width: 100%;  
 }
 
 #registro .contenido { 
     width: 100%;
-    
     padding-top: 3%;
     font-size: 1.7em;
 }
@@ -111,6 +107,13 @@ body {
 .inputText {
     width: 100%;  
     height: 2em;
+}
+
+.bg {
+    z-index:-1;
+    position: absolute;
+    width: 100%;
+    height: 23%;
 }
 
 /* hidden pages */
