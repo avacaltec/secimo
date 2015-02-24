@@ -25,16 +25,33 @@
                 <form id="registroUsuario" name="registroUsuario"> 
                     <table>
                         <tr>
-                            <td> <b>DNI </td> <td>:</b> </td><td> <input type="text" id="dni" name="dni" maxlength="8" class="inputText"> </td>
+                            <td> <b>DNI :</b> </td>
                         </tr>
                         <tr>
-                            <td> <b>TEL&Eacute;FONO </td> <td>:</b> </td><td> <input type="text" id="telefono" name="telefono" maxlength="15" class="inputText"> </td>
+                            <td> <input type="text" id="dni" name="dni" maxlength="8" class="inputText"> </td>
+                        </tr>
+                        <tr class="h10"></tr>
                         <tr>
-                            <td> <b>NOMBRE </td> <td>:</b> </td><td> <input type="text" id="nombre" name="nombre" maxlength="30" class="inputText"> </td>
+                            <td> <b>TEL&Eacute;FONO :</b> </td>
                         </tr>
                         <tr>
-                            <td> <b>CORREO </td> <td>:</b> </td><td> <input type="email" id="email" name="email" maxlength="30" class="inputText"> </td>
+                            <td> <input type="text" id="telefono" name="telefono" maxlength="15" class="inputText"> </td>
                         </tr>
+                        <tr class="h10"></tr>
+                        <tr>
+                            <td> <b>NOMBRE :</b> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" id="nombre" name="nombre" maxlength="30" class="inputText"> </td>
+                        </tr>
+                        <tr class="h10"></tr>
+                        <tr>
+                            <td> <b>CORREO :</b> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="email" id="email" name="email" maxlength="30" class="inputText"> </td>
+                        </tr>
+                        <tr class="h10"></tr>
                         <tr>
                             <td colspan="3"><input type="submit" value="Enviar" class="inputSubmit"></td>
                         </tr>
@@ -56,7 +73,6 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-            obtenerId();
         </script>
     </body>
 </html>

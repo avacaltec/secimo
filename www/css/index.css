@@ -81,7 +81,7 @@ body {
 #registro .contenido table { 
     width: 90%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
 }
 
 #registro .cabecera .logo img {
@@ -108,6 +108,10 @@ body {
     position: absolute;
     width: 100%;
     height: 23%;
+}
+
+.h10 {
+    height: 10px;
 }
 
 /* hidden pages */
