@@ -1,5 +1,3 @@
-var uuid;
-
 var app = {
     // Application Constructor
     initialize: function() {
@@ -15,7 +13,8 @@ var app = {
 };
 
 function obtenerId() {
-    uuid = device.uuid;
+    var uuid = device.uuid;
+    alert(uuid);
     var htuu = document.getElementById('code');
     htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
 }
@@ -26,7 +25,6 @@ function verAlertas() {
 }
 
     $('#registroUsuario').submit(function(){
-                alert(uuid);
                 var count = 0;
                 var dni = document.forms["registroUsuario"]["dni"].value;
                 var telefono = document.forms["registroUsuario"]["telefono"].value;
