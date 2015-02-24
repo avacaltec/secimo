@@ -59,28 +59,10 @@ function verAlertas() {
                     data: postData+'&lid='+dataID,
                     url: 'http://secimo.app.gkhome.net/sys/reg/AVACAL23D02M15AV001JM/rus230215v001jm.php',
                     success: function(data){
-                        console.log(data);
-
-                        $.ajax({
-                            url: 'http://mode.com.pe/s/mcvp/0.1/vmcvip1502.php',
-                            type: 'GET',
-                            dataType: 'jsonp',
-                            jsonp: 'callback',
-                            error: function(xhr, status, error) {
-                                alert("error");
-                            },
-                            success: function(jsonp) { 
-                              if (jsonp.mensaje<1) {
-                                    alert('INCORRECTO');
-                                }else{
-                                    alert('CORRECTO');
-                                    m4m42();
-                                }
-                            }
-                        });
+                        alert("Enviado correctamente.")
                     },
                     error: function(data){ alert(data); }
                 });
-
+                verAlertas();
                 return false;
             });
