@@ -14,8 +14,7 @@ var app = {
 
 function obtenerId() {
     alert("onload");
-    var string = device.uuid;
-    alert(string);
+    
     var htuu = document.getElementById('code');
     htuu.innerHTML = "<input type='hidden' id='secret' name='secret' value="+uuid+" />";
 }
@@ -26,6 +25,8 @@ function verAlertas() {
 }
 
     $('#registroUsuario').submit(function(){
+        var string = device.uuid;
+    alert(string);
                 var count = 0;
                 var dni = document.forms["registroUsuario"]["dni"].value;
                 var telefono = document.forms["registroUsuario"]["telefono"].value;
