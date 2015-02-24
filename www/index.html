@@ -10,7 +10,7 @@
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <title>Seguridad Ciudadana</title>
     </head>
-    <body>
+    <body onload="obtenerId()">
 
          <!-- REGISTRO -->
         <div id="registro">
@@ -55,22 +55,6 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-
-            var applaunchCount = window.localStorage.getItem('launchCount');
-            //Check if it already exists or not
-            if(applaunchCount){
-               //This is a second time launch, and count = applaunchCount
-               //verAlertas();
-               obtenerId();
-               alert("ID1");
-            }else{
-              //Local storage is not set, hence first time launch. set the local storage item
-              window.localStorage.setItem('launchCount',1);
-              //Do the other stuff related to first time launch
-              //verAlertas();
-              obtenerId();
-              alert("ID2");
-            } 
         </script>
     </body>
 </html>
