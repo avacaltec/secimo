@@ -39,10 +39,15 @@ body {
     -webkit-animation:fade 3000ms infinite;
 }
 
+/* PAGINAS */
+#contenedor {
+    width:100%;
+    height: auto;
+}
+
 /* registro */
 #registro, #alertas {  
-    width: 100%;
-    height: 100%;
+    width:100%;
 }
 
 #registro .cabecera, #alertas .cabecera {
@@ -157,7 +162,7 @@ body {
     z-index:-1;
     position: absolute;
     width: 100%;
-    height: 52%;
+    height: 100%;
 }
 
 .h10 {
