@@ -45,7 +45,7 @@ body {
     height: auto;
 }
 
-#alertas .alertas_seguridad {
+#alertas .alertas_seguridad, #alertas .alertas_inmediatas {
     width: 100%;
     height: auto;
     margin-top: 1.5%;
@@ -55,6 +55,12 @@ body {
 #alertas .alertas_seguridad img {
     width: 90%;
     border-radius: 20px;
+}
+
+#alertas .alertas_inmediatas img {
+    float: left;
+    width: 29%;
+    margin-left: 1%;
 }
 
 /* registro */
