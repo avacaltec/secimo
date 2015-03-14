@@ -241,7 +241,7 @@ body {
 }
 /* hidden pages 
 #alertas */
-#registro {
+#registro, #alertas {
     display: none;
 }
 
