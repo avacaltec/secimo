@@ -63,6 +63,49 @@ body {
     margin-left: 1%;
 }
 
+
+
+/* tamaño y margen general */
+.w100 {
+    width:100%;
+}
+.w80 {
+    width:80%;
+}
+.ml3 {
+    margin-left: 3%;
+}
+
+
+/* capas generales */
+.mid {
+    margin-top: 5%;
+    text-align: center;
+}
+.content {
+    width:100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.bottom {
+    position: fixed;   
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    opacity: 0.9;
+    bottom:0;
+    padding-left: 5%;
+}
+ 
+.bottom img {
+    float: left;
+    width: 17%;
+    margin-left: 1%;
+}
+
+
+
 #alertas .contenido { 
     width: 100%;
     margin-top: 52%;
@@ -84,21 +127,7 @@ body {
     margin-top: 3%;
 }
 
-#alertas .bottom {
-    position: fixed;   
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0px;
-    opacity: 0.9;
-    bottom:0;
-    padding-left: 5%;
-}
- 
-#alertas .bottom img {
-    float: left;
-    width: 17%;
-    margin-left: 1%;
-}   
+
 
 /* registro */
 #registro, #alertas {  
@@ -241,7 +270,7 @@ body {
 }
 /* hidden pages 
 #alertas */
-#registro {
+#registro, #alertas, #alerta1, #alerta2, #alerta3, #alerta4, #alerta5 {
     display: none;
 }
 
